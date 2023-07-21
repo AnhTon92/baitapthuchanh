@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiem tra nam nhuan</title>
+</head>
+
+<body>
+    <script>
+      let x = parseInt(prompt("Enter a year"));
+        let laNamNhuan = false;
+
+        if (x % 4 == 0) {
+            if (x % 100 == 0) {
+                if (x % 400 == 0) {
+                    laNamNhuan = true;
+                }
+            } else {
+                laNamNhuan = true;
+            }
+        }
+
+        if (laNamNhuan) {
+            alert(x + "la nam nhuan");
+        } else {
+            alert(x + "khong phai nam nhuan");
+        }
+    </script>
+</body>
+
+</html>
