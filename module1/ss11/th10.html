@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>in tam giac vuong</title>
 </head>
+
 <body>
-    <script>
-        let n = +prompt("nhap vao do cao cua tam giac vuong")
-        for (let i = 0; i < n; i++) {
-                for (let j = 0; j < i; j++) {
-                    console.log(" ");
+
+    <pre><script>
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++){
+                if (i <= j) {
+
+                    document.write("*");
+                } else {
+                    document.write(" ");
                 }
-                for (let j = i; j < n; j++) {
-                    console.log("*");
-                }
-                console.log();
             }
+            document.writeln();
+        }
 
     </script>
+    </pre>
 </body>
+
 </html>
